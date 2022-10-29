@@ -8,7 +8,11 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
 
-  receipes: Recipe[] = [];
+  recipes: Recipe[] = [
+    new Recipe('A Test Recipe', 'This is simply a test', 'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/chef-logo-template-design-1f535b54c66f5d3251c99c369c1cf894_screen.jpg?ts=1622307482'),
+    
+    new Recipe('A Test Recipe', 'This is simply a test', 'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/chef-logo-template-design-1f535b54c66f5d3251c99c369c1cf894_screen.jpg?ts=1622307482')
+  ];
 
   constructor() { }
 
